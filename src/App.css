@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#0f172a;
+}
+
+.app{
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+
+    padding:30px;
+
+    transition:.4s;
+}
+
+.app.dark {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  transition: all 0.4s ease;
+}
+
+button{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+.sunny{
+
+    background:linear-gradient(135deg,#ffb347,#ffcc33);
+
+}
+
+.clouds{
+
+    background:linear-gradient(135deg,#6dd5fa,#2980b9);
+
+}
+
+.rain{
+
+    background:linear-gradient(135deg,#314755,#26a0da);
+
+}
+
+.thunderstorm{
+
+    background:linear-gradient(135deg,#232526,#414345);
+
+}
+
+.snow{
+
+    background:linear-gradient(135deg,#e6dada,#274046);
+
+}
+
+.clear{
+
+    background:linear-gradient(135deg,#56CCF2,#2F80ED);
+
+}
+
+input{
+
+    outline:none;
+
+}
+
+h2{
+
+    text-align:center;
+
+    font-weight:400;
+
+    animation:fade 1s;
+
+}
+
+@keyframes fade{
+
+    from{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    }
+
+    to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    }
+
+}

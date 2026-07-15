@@ -1,0 +1,98 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 30px;
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(20px);
+
+  background: rgba(255,255,255,.15);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,.15);
+
+  margin-bottom: 35px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo h2{
+  color:white;
+  font-size:28px;
+  font-weight:700;
+}
+
+.logo-icon{
+  font-size:35px;
+  color:#FFD93D;
+  animation:rotate 6s linear infinite;
+}
+
+.theme-btn{
+
+  width:50px;
+  height:50px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:white;
+
+  font-size:22px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  transition:.4s;
+}
+
+.theme-btn:hover{
+
+  transform:rotate(180deg);
+
+  background:#FFD93D;
+
+}
+
+.app.dark .navbar {
+  background: rgba(30, 41, 59, 0.6);
+}
+
+.app.dark .theme-btn {
+  background: #1e293b;
+  color: white;
+}
+@keyframes rotate{
+
+  100%{
+
+  transform:rotate(360deg);
+
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+
+  padding:15px;
+
+  }
+
+  .logo h2{
+
+  font-size:22px;
+
+  }
+
+}

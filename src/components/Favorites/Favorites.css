@@ -1,0 +1,41 @@
+.favorites{
+
+    margin-top:40px;
+
+}
+
+.favorite-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.favorite-list button{
+
+    background:#FFD93D;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.favorite-list button:hover{
+
+    transform:scale(1.05);
+
+}

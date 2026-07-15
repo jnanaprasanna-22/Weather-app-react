@@ -1,0 +1,112 @@
+.forecast-container{
+
+    margin-top:40px;
+
+}
+
+.forecast-title{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:white;
+
+    font-size:34px;
+
+}
+
+.forecast-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+.forecast-card{
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:white;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.forecast-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.forecast-card img{
+
+    width:90px;
+
+    animation:float 3s infinite;
+
+}
+
+.forecast-card h4{
+
+    font-size:30px;
+
+    margin:10px 0;
+
+}
+
+.forecast-card p{
+
+    text-transform:capitalize;
+
+    margin-bottom:10px;
+
+}
+
+.forecast-card small{
+
+    opacity:.8;
+
+}
+.app.dark .forecast-card {
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+@keyframes float{
+
+    50%{
+
+    transform:translateY(-8px);
+
+    }
+
+}
+.forecast-extra {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  color: #f8fafc;
+  opacity: 0.9;
+}
+
+.forecast-extra p {
+  margin: 0;
+}

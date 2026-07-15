@@ -1,0 +1,42 @@
+.loader-container{
+    margin-top:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+}
+
+.spinner{
+
+    width:70px;
+
+    height:70px;
+
+    border:7px solid rgba(255,255,255,.3);
+
+    border-top:7px solid white;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+.loader-container h2{
+
+    color:white;
+
+    font-weight:500;
+
+}
